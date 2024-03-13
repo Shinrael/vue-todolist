@@ -24,8 +24,13 @@ createApp({
     },
 
     addTask(){
-      this.todoList.unshift({text: this.newTask, done:false})
-      this.newTask = ''
+      if (this.newTask.length > 4) {
+        this.todoList.unshift({text: this.newTask, done:false})
+        this.newTask = ''
+      }else{
+        alert('Attenzione, devi inserire almeno cinque caratteri')
+        this.newTask = ''
+      }  
     }
   },
 
