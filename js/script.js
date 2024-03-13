@@ -5,20 +5,28 @@ createApp({
     return{
 
       todoList: [
-        { text: 'uga uga',
+        { text: 'Fare spesa',
           done: true },
-          { text: 'giuseppina',
+        { text: 'Studiare',
           done: false },
-          { text: 'spesa',
-          done: true }
-      ]
+        { text: 'Ripassare js',
+          done: false }
+      ],
+      newTask:'',
 
     }
   },
 
   methods:{
 
-    
+    deleteRow(index){
+      this.todoList.splice(index,1)
+    },
+
+    addTask(){
+      this.todoList.unshift({text: this.newTask, done:false})
+      this.newTask = ''
+    }
   },
 
   mounted(){
