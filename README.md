@@ -10,3 +10,5 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 3. Creo una funzione per eliminare la riga utilizzando splice e la inserisco dentro il cestino.
 4. Creo la funzione addTask per aggiungere tramite l'invio nell'input o il click sul pulsante quello che scrivo dentro l'input
 5. Nello span del <li> inserisco un @click per sbarrare o togliere la sbarratura dalla lista 
+6. nella funzione deleteRow gli aggiungo un if dove gli dico che se il done dentro la mia lista è true può cancellare altrimenti esce fuori un alert.
+7. Aggiungo un v-if alla <li> dove gli dico che se la lunghezza di todolist è maggiore di 0 si vede la lista, altrimenti con il v-else ad un h2 informo che la lista è vuota
