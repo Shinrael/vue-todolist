@@ -20,7 +20,11 @@ createApp({
   methods:{
 
     deleteRow(index){
-      this.todoList.splice(index,1)
+      if (this.todoList[index].done == true) {
+        this.todoList.splice(index,1)
+      } else {
+        alert('Attenzione, non è possibile cancellare senza prima averla sbarrata')
+      }     
     },
 
     addTask(){

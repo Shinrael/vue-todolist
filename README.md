@@ -9,3 +9,4 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 2. Sempre in li aggiungo :class e gli dico che se todo.done è true allora aggiunge la classe done che mi sbarra la scritta.
 3. Creo una funzione per eliminare la riga utilizzando splice e la inserisco dentro il cestino.
 4. Creo la funzione addTask per aggiungere tramite l'invio nell'input o il click sul pulsante quello che scrivo dentro l'input
+5. Nello span del <li> inserisco un @click per sbarrare o togliere la sbarratura dalla lista 

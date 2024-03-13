@@ -36,11 +36,15 @@
 
     <div class="task-container">
       <ul>
-        <li v-for="(todo,index) in todoList" :class="{'done' : todo.done}">
-          <span @click="todoList[index].done = !todoList[index].done"> {{todo.text}} </span>
+        <li
+          v-for="(todo,index) in todoList"
+          :class="{'done' : todo.done}"
+          @click="todoList[index].done = !todoList[index].done"
+          >
+          <span > {{todo.text}} </span>
           <i
             class="fa-solid fa-trash-can"
-            @click="deleteRow"></i>
+            @click.stop="deleteRow(index)"></i>
         </li>
         <!-- <li>
           <span>task....</span>
