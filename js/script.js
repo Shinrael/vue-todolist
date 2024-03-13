@@ -31,7 +31,8 @@ createApp({
         alert('Attenzione, devi inserire almeno cinque caratteri')
         this.newTask = ''
       }  
-    }
+    },
+
   },
 
   mounted(){

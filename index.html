@@ -37,7 +37,7 @@
     <div class="task-container">
       <ul>
         <li v-for="(todo,index) in todoList" :class="{'done' : todo.done}">
-          <span> {{todo.text}} </span>
+          <span @click="todoList[index].done = !todoList[index].done"> {{todo.text}} </span>
           <i
             class="fa-solid fa-trash-can"
             @click="deleteRow"></i>
